@@ -1,0 +1,31 @@
+{
+  "common": {
+    "appName": "IT365 工具箱",
+    "search": "搜索工具...",
+    "all": "全部",
+    "language": "语言"
+  },
+  "header": {
+    "home": "首页",
+    "about": "关于"
+  },
+  "footer": {
+    "copyright": "© 2025 IT365 工具箱. 保留所有权利.",
+    "builtWith": "使用 React + TypeScript + Vite 构建"
+  },
+  "categories": {
+    "text": "文本工具",
+    "dev": "开发工具",
+    "image": "图片工具",
+    "other": "其他工具"
+  },
+  "home": {
+    "title": "开发者在线工具集",
+    "subtitle": "提供各类实用在线工具,提升开发效率"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "message": "抱歉,您访问的页面不存在",
+    "backHome": "返回首页"
+  }
+}

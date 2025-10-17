@@ -1,0 +1,31 @@
+{
+  "common": {
+    "appName": "IT365 Toolbox",
+    "search": "Search tools...",
+    "all": "All",
+    "language": "Language"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About"
+  },
+  "footer": {
+    "copyright": "© 2025 IT365 Toolbox. All rights reserved.",
+    "builtWith": "Built with React + TypeScript + Vite"
+  },
+  "categories": {
+    "text": "Text Tools",
+    "dev": "Dev Tools",
+    "image": "Image Tools",
+    "other": "Other Tools"
+  },
+  "home": {
+    "title": "Online Developer Tools",
+    "subtitle": "Practical online tools to boost development efficiency"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist",
+    "backHome": "Back to Home"
+  }
+}
