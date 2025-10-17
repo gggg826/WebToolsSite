@@ -103,15 +103,15 @@ export function Home() {
             </h1>
             <p className="text-xl mb-8 opacity-90">{t('home.description')}</p>
 
-            {/* Search Bar */}
-            <div className="relative max-w-2xl mx-auto">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+            {/* Search Bar - 缩短到1/8 */}
+            <div className="relative max-w-xs mx-auto">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
                 type="text"
                 placeholder={t('common.search')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-2xl text-lg transition-all"
+                className="w-full pl-10 pr-3 py-2.5 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/30 shadow-lg text-sm transition-all"
               />
             </div>
           </div>
@@ -138,35 +138,36 @@ export function Home() {
           </div>
         </div>
 
-        {/* Tools Grid */}
+        {/* Tools Grid - 改为2列，大按钮样式 */}
         <div className="py-8 pb-16">
           {filteredTools.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-gray-500 text-lg">{t('home.noResults')}</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {filteredTools.map((tool) => {
                 const Icon = tool.icon
                 return (
                   <button
                     key={tool.id}
-                    className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 text-left border border-gray-100 hover:border-transparent hover:-translate-y-1"
+                    className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-left border-2 border-gray-100 hover:border-blue-500 hover:bg-blue-50/50 active:scale-[0.98]"
                   >
-                    <div
-                      className={`w-14 h-14 bg-gradient-to-br ${tool.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
-                    >
-                      <Icon className="w-7 h-7 text-white" />
-                    </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                      {t(`tools.${tool.id}.name`)}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {t(`tools.${tool.id}.description`)}
-                    </p>
-                    <div className="flex items-center text-blue-600 font-medium text-sm">
-                      <span>{t('common.use')}</span>
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    <div className="flex items-center gap-4">
+                      <div
+                        className={`w-16 h-16 bg-gradient-to-br ${tool.color} rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                      >
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                          {t(`tools.${tool.id}.name`)}
+                        </h3>
+                        <p className="text-gray-600 text-sm line-clamp-2">
+                          {t(`tools.${tool.id}.description`)}
+                        </p>
+                      </div>
+                      <ArrowRight className="w-6 h-6 text-blue-600 shrink-0 group-hover:translate-x-1 transition-transform opacity-0 group-hover:opacity-100" />
                     </div>
                   </button>
                 )
