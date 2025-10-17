@@ -103,7 +103,7 @@ export function Home() {
             </h1>
             <p className="text-xl mb-8 opacity-90">{t('home.description')}</p>
 
-            {/* Search Bar - 缩短到1/8 */}
+            {/* Search Bar */}
             <div className="relative max-w-xs mx-auto">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
