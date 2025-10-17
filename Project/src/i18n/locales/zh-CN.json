@@ -3,7 +3,8 @@
     "appName": "IT365 工具箱",
     "search": "搜索工具...",
     "all": "全部",
-    "language": "语言"
+    "language": "语言",
+    "use": "使用工具"
   },
   "header": {
     "home": "首页",
@@ -14,14 +15,52 @@
     "builtWith": "使用 React + TypeScript + Vite 构建"
   },
   "categories": {
-    "text": "文本工具",
-    "dev": "开发工具",
-    "image": "图片工具",
-    "other": "其他工具"
+    "all": "全部工具",
+    "formatter": "格式化",
+    "encoder": "编码转换",
+    "generator": "生成器",
+    "converter": "转换工具",
+    "security": "加密安全"
   },
   "home": {
-    "title": "开发者在线工具集",
-    "subtitle": "提供各类实用在线工具,提升开发效率"
+    "title": "IT365 工具箱",
+    "subtitle": "高效便捷的开发者在线工具集",
+    "description": "为开发者提供各类实用工具，提升开发效率，简化日常工作",
+    "noResults": "未找到匹配的工具"
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "JSON 格式化",
+      "description": "美化和压缩JSON数据，支持语法高亮和错误检测"
+    },
+    "base64-encoder": {
+      "name": "Base64 编码",
+      "description": "Base64 编码和解码工具，支持文本和文件转换"
+    },
+    "uuid-generator": {
+      "name": "UUID 生成器",
+      "description": "快速生成 UUID/GUID，支持多种版本格式"
+    },
+    "qr-code": {
+      "name": "二维码生成",
+      "description": "在线生成二维码，支持文本、链接和名片"
+    },
+    "timestamp": {
+      "name": "时间戳转换",
+      "description": "Unix时间戳与日期时间相互转换工具"
+    },
+    "url-encoder": {
+      "name": "URL 编码",
+      "description": "URL 编码和解码工具，处理特殊字符"
+    },
+    "hash-generator": {
+      "name": "哈希计算",
+      "description": "MD5、SHA-1、SHA-256 等哈希值计算工具"
+    },
+    "color-converter": {
+      "name": "颜色转换",
+      "description": "RGB、HEX、HSL 等颜色格式相互转换"
+    }
   },
   "notFound": {
     "title": "页面未找到",

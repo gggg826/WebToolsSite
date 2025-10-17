@@ -12,7 +12,10 @@
       "Bash(pnpm dev)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git branch:*)"
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(pnpm list:*)",
+      "Bash(timeout 15 pnpm dev:*)"
     ],
     "deny": [],
     "ask": []

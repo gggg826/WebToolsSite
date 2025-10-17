@@ -3,7 +3,8 @@
     "appName": "IT365 Toolbox",
     "search": "Search tools...",
     "all": "All",
-    "language": "Language"
+    "language": "Language",
+    "use": "Use Tool"
   },
   "header": {
     "home": "Home",
@@ -14,14 +15,52 @@
     "builtWith": "Built with React + TypeScript + Vite"
   },
   "categories": {
-    "text": "Text Tools",
-    "dev": "Dev Tools",
-    "image": "Image Tools",
-    "other": "Other Tools"
+    "all": "All Tools",
+    "formatter": "Formatters",
+    "encoder": "Encoders",
+    "generator": "Generators",
+    "converter": "Converters",
+    "security": "Security"
   },
   "home": {
-    "title": "Online Developer Tools",
-    "subtitle": "Practical online tools to boost development efficiency"
+    "title": "IT365 Toolbox",
+    "subtitle": "Efficient Developer Tools Collection",
+    "description": "Practical tools for developers to boost productivity and simplify daily work",
+    "noResults": "No matching tools found"
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "description": "Beautify and compress JSON data with syntax highlighting and error detection"
+    },
+    "base64-encoder": {
+      "name": "Base64 Encoder",
+      "description": "Base64 encoding and decoding tool for text and files"
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "description": "Generate UUID/GUID with support for multiple versions"
+    },
+    "qr-code": {
+      "name": "QR Code Generator",
+      "description": "Generate QR codes for text, links, and business cards"
+    },
+    "timestamp": {
+      "name": "Timestamp Converter",
+      "description": "Convert between Unix timestamp and datetime formats"
+    },
+    "url-encoder": {
+      "name": "URL Encoder",
+      "description": "URL encoding and decoding tool for special characters"
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "description": "Calculate MD5, SHA-1, SHA-256 and other hash values"
+    },
+    "color-converter": {
+      "name": "Color Converter",
+      "description": "Convert between RGB, HEX, HSL and other color formats"
+    }
   },
   "notFound": {
     "title": "Page Not Found",
