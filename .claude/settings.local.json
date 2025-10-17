@@ -15,7 +15,10 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(pnpm list:*)",
-      "Bash(timeout 15 pnpm dev:*)"
+      "Bash(timeout 15 pnpm dev:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)"
     ],
     "deny": [],
     "ask": []
